@@ -57,6 +57,8 @@ Data was collected from Baseball-reference using packages from the Selenium libr
   - **GB/FB:** Ground Ball to Fly Ball Ratio - Higher value means lower risk
   - **BABIP:** Batting Average on Balls in Play - The opposite of FIP, measures only the performance of the pitcher based on                    their defense
   - SwStr%: Percentage of pitches that resulted in a batter swinging
+  
+  ![clustering](images/cluster_1.png)
 
 
 ### Quality Start Prediction
