@@ -6,9 +6,9 @@ In a follow-up to my midterm project exploring team data across 20 seasons in th
 
 ### Questions: 
 
-  1. Can clustering methods be used to classify pitchers by complete season statistics? 
+  1. *Can clustering methods be used to classify pitchers by complete season statistics?*
  
-  2. Can predictive analytics be used in determining the outcome of individual game performance? 
+  2. *Can predictive analytics be used in determining the outcome of individual game performance?*
 
 
 ### Resources: 
@@ -34,12 +34,19 @@ The following online resources and Python libraries were utilized in the facilit
 
 ### Data Collection
 
-Data was collected from Baseball-reference using packages from the Selenium library, as well as BeautifulSoup, to scrape tabular data across 13 seasons for all 30 MLB teams. 
-
-![](baseball_reference.gif)
+Data was collected from Baseball-reference using packages from the Selenium library, as well as BeautifulSoup, to scrape tabular data across 13 seasons for all 30 MLB teams. Included below is a GIF of the web scraper in the process of loading and reloading the webpage for each of the ~400 keyword searches used to complete the dataset. 
 
 
-### Project Structure:
+
+![Data Scraper](https://media.giphy.com/media/1UZ8fMGbztxrSXiYyV/giphy.gif)
+
+
+
+## Project Structure:
+
+### Clustering based on single-season performance: 
+
+
 
 
 
