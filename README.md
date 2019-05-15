@@ -105,6 +105,28 @@ And performances from Jose Berrios, Mike Foltynewicz, and Walker Buehler, all of
  
  One statistic I found valuable in evaluating this distribution further was the variable for Bill James' Game Score: 
  
- <a href="url"> <img src="https://github.com/BrandenDahlem/Quality_Start_Prediction/blob/master/images/BJgamescore.png" align="Center" height="440" width="700" ></a>
+ <a href="url"> <img src="https://github.com/BrandenDahlem/Quality_Start_Prediction/blob/master/images/nice_slide_gamescore.png" align="Center" height="440" width="700" ></a>
+ 
+ Consider this statistic as a way of measuring Win Probability. The higher the game score, the more likely the pitcher was in a successful start. Interestingly, the amount of overlap between starts considered "Quality" and non-"Quality" starts was quite large. There were starts in the 40s that were met the requirement of being a "Quality", and starts that scored in the 70s that did not. I would consider this as an example in the argument against Quality starts being considered a reliable metric in calculating the __true__ value of a starting pitcher. 
  
  
+ 
+ Since this was a measure of is the start a Yes or a No (1 or 0), a Logistic Regression model was what I used to perform my modeling. It was able to detect whether not the start could be considered "Quality" with 85 percent accuracy. 
+
+ <a href="url"> <img src="https://github.com/BrandenDahlem/Quality_Start_Prediction/blob/master/images/log_regresion.png" align="Center" height="270" width="500" ></a>
+ 
+ The feature given the greatest importance in the model was WPA. 
+ 
+ <a href="url"> <img src="https://github.com/BrandenDahlem/Quality_Start_Prediction/blob/master/images/feature_importance.png" align="Center" height="270" width="500" ></a>
+ 
+ As we can see, its values fit a logistic curve quite nicely. 
+ 
+  <a href="url"> <img src="https://github.com/BrandenDahlem/Quality_Start_Prediction/blob/master/images/log_curve.png" align="Center" height="200" width="350" ></a>
+ 
+ ### Conclusion
+ 
+Both Classification and Prediction models were effective in evaluating pitching performances. Classifying using clustering allowed to group similar performances together in order to gain context when looking at complete seasons. This would be of value to management and owners. 
+
+Using a predictive model in determing the outcome of single performances over the course of an entire season helps in identifying key values for teams or other players to focus on. This information would be more valuable in scouting players and would therefore be useful to managers, other players, and scouts. 
+
+
