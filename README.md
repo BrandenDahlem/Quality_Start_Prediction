@@ -1,4 +1,4 @@
-# Pitching Performance Clustering and "Quality" Start Prediction
+# MLB Pitching Performance Clustering and "Quality" Start Prediction
 
 ### Motivation: 
 
@@ -53,8 +53,11 @@ Data was collected from Baseball-reference using packages from the Selenium libr
   - **BABIP:** Batting Average on Balls in Play - The opposite of FIP, measures only the performance of the pitcher based on                    their defense
   - SwStr%: Percentage of pitches that resulted in a batter swinging
   
-<a href="url"><img src="https://github.com/BrandenDahlem/Quality_Start_Prediction/blob/tree/master/images/cluster_1.png" align="center" height="300" width="300" ></a>
+<a href="url"> <img src="https://github.com/BrandenDahlem/Quality_Start_Prediction/blob/master/images/cluster_1.png" align="left" height="500" width="500" ></a>
 
+<br>
+<br>
+<br>
 
 ### Quality Start Prediction
 
