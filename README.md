@@ -10,7 +10,6 @@ In a follow-up to my midterm project exploring team data across 20 seasons in th
  
   2. *Can predictive analytics be used in determining the outcome of individual game performance?*
 
-
 ### Resources: 
 
 The following online resources and Python libraries were utilized in the facilitation of this project:
@@ -36,11 +35,7 @@ The following online resources and Python libraries were utilized in the facilit
 
 Data was collected from Baseball-reference using packages from the Selenium library, as well as BeautifulSoup, to scrape tabular data across 13 seasons for all 30 MLB teams. Included below is a GIF of the web scraper in the process of loading and reloading the webpage for each of the ~400 keyword searches used to complete the dataset. 
 
-
-
 ![Data Scraper](https://media.giphy.com/media/1UZ8fMGbztxrSXiYyV/giphy.gif)
-
-
 
 ## Project Structure:
 
@@ -58,13 +53,13 @@ Data was collected from Baseball-reference using packages from the Selenium libr
   - **BABIP:** Batting Average on Balls in Play - The opposite of FIP, measures only the performance of the pitcher based on                    their defense
   - SwStr%: Percentage of pitches that resulted in a batter swinging
   
-  ![clustering](images/cluster_1.png)
+<a href="url"><img src="https://github.com/BrandenDahlem/Quality_Start_Prediction/blob/tree/master/images/cluster_1.png" align="center" height="300" width="300" ></a>
 
 
 ### Quality Start Prediction
 
 - “Quality Start” - John Lowe, a sportswriter for the Philadelphia Inquirer, coined the term in 1985 as a means to gauge whether a pitcher did his job.
-    - A Quality Start is defined  as, “When a starting pitcher pitches at least SIX innings and allows THREE earned runs or fewer.”
+    - A Quality Start is defined  as, “When a starting pitcher pitches at least SIX innings and allows THREE earned runs or           fewer.”
 
 - _65,000 entries_, one for each pitching start from 2006-2018
 
@@ -75,10 +70,17 @@ Data was collected from Baseball-reference using packages from the Selenium libr
     - H/IP - Hits per inning pitched
     - HR - Home Runs allowed in a start
     - **WPA** - Win Probability Added - “Clutch Statistic” - Determines a small positive or negative value for each play within a                 game that a player has directly contributed to
-    - **aLI** - average Leverage Index - Similar to WPA, measures the performance of the player in high pressure situations
+    - **aLI** - average Leverage Index - Similar to WPA, measures the performance of the player in high pressure situationss
     - 2B - Doubles allowed
     - SB - Stolen Bases allowed
 
+  
+<a href="url"><img src="https://github.com/BrandenDahlem/Quality_Start_Prediction/blob/master/images/quality_distribution.png" align="center" height="200" width="200" ></a>
+
+
+<br>
+<br>
+<br>
 
 The structure of my project will consist of a deeper look into what type of factors early on in a game determine the overall performance of a pitcher throughout that same game. Pitch F/x data details over 30 metrics for each pitch a pitcher throws in a season.
 
