@@ -1,4 +1,4 @@
-# Quality Start Prediction
+# Pitching Performance Clustering and "Quality" Start Prediction
 
 ### Motivation: 
 
@@ -46,8 +46,36 @@ Data was collected from Baseball-reference using packages from the Selenium libr
 
 ### Clustering based on single-season performance: 
 
+- _8800_ entries, one for every single-season performance between the 2006 and 2018 seasons. 
+
+- Key statistics being used in this experiment: 
+  - IP: Innings Pitched - Number of Innings thrown by a pitcher over the course of a season
+  - K/9: Strikeout Rate - Number of Strikeouts thrown in a 9-inning game
+  - **tERA:** True Earned Run Average - Attempts to quantify a pitcher's performance based on what he can control. Pitchers              who record mostly ground balls and popups, as opposed to line drives and fly balls, are rewarded for inducing                  weaker contact.
+  - **LOB%:** Percentage of runners left on base over the course of a game
+  - FIP: Fielding Independent Pitching - Similar to tERA, but does not factor balls in play. Measures only outcomes a pitcher             can control. 
+  - **GB/FB:** Ground Ball to Fly Ball Ratio - Higher value means lower risk
+  - **BABIP:** Batting Average on Balls in Play - The opposite of FIP, measures only the performance of the pitcher based on                    their defense
+  - SwStr%: Percentage of pitches that resulted in a batter swinging
 
 
+### Quality Start Prediction
+
+- “Quality Start” - John Lowe, a sportswriter for the Philadelphia Inquirer, coined the term in 1985 as a means to gauge whether a pitcher did his job.
+    - A Quality Start is defined  as, “When a starting pitcher pitches at least SIX innings and allows THREE earned runs or fewer.”
+
+- _65,000 entries_, one for each pitching start from 2006-2018
+
+- Features being considered: 
+    - SO/IP - Number of strikeouts recorded per inning in a start
+    - BB/IP  - Number of walks per inning pitched
+    - **Str_Ratio**  - Ratio of strikes/balls in an outing
+    - H/IP - Hits per inning pitched
+    - HR - Home Runs allowed in a start
+    - **WPA** - Win Probability Added - “Clutch Statistic” - Determines a small positive or negative value for each play within a                 game that a player has directly contributed to
+    - **aLI** - average Leverage Index - Similar to WPA, measures the performance of the player in high pressure situations
+    - 2B - Doubles allowed
+    - SB - Stolen Bases allowed
 
 
 The structure of my project will consist of a deeper look into what type of factors early on in a game determine the overall performance of a pitcher throughout that same game. Pitch F/x data details over 30 metrics for each pitch a pitcher throws in a season.
