@@ -103,4 +103,8 @@ And performances from Jose Berrios, Mike Foltynewicz, and Walker Buehler, all of
  
  Worth noting is the distribution of the dataset, which appears to be almost 50/50. This is beneficial in making predictions moving forward. 
  
+ One statistic I found valuable in evaluating this distribution further was the variable for Bill James' Game Score: 
+ 
+ <a href="url"> <img src="https://github.com/BrandenDahlem/Quality_Start_Prediction/blob/master/images/BJgamescore.png" align="Center" height="440" width="700" ></a>
+ 
  
