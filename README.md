@@ -53,11 +53,14 @@ Data was collected from Baseball-reference using packages from the Selenium libr
   - **BABIP:** Batting Average on Balls in Play - The opposite of FIP, measures only the performance of the pitcher based on                    their defense
   - SwStr%: Percentage of pitches that resulted in a batter swinging
   
-<a href="url"> <img src="https://github.com/BrandenDahlem/Quality_Start_Prediction/blob/master/images/cluster_1.png" align="left" height="500" width="500" ></a>
 
-<br>
-<br>
-<br>
+
+<a href="url"> <img src="https://github.com/BrandenDahlem/Quality_Start_Prediction/blob/master/images/cluster_1.png" align="Center" height="440" width="440" ></a>
+
+
+
+
+
 
 ### Quality Start Prediction
 
@@ -78,7 +81,7 @@ Data was collected from Baseball-reference using packages from the Selenium libr
     - SB - Stolen Bases allowed
 
   
-<a href="url"><img src="https://github.com/BrandenDahlem/Quality_Start_Prediction/blob/master/images/quality_distribution.png" align="center" height="200" width="200" ></a>
+<a href="url"><img src="https://github.com/BrandenDahlem/Quality_Start_Prediction/blob/master/images/quality_distribution.png" align="Center" height="300" width="300" ></a>
 
 
 <br>
