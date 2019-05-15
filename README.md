@@ -53,11 +53,29 @@ Data was collected from Baseball-reference using packages from the Selenium libr
   - **BABIP:** Batting Average on Balls in Play - The opposite of FIP, measures only the performance of the pitcher based on                    their defense
   - SwStr%: Percentage of pitches that resulted in a batter swinging
   
+<a href="url"> <img src="https://github.com/BrandenDahlem/Quality_Start_Prediction/blob/master/images/cluster_1.png" align="Center" height="600" width="600" ></a>
 
+The bottom of this chart are mostly relief pitchers, and pitchers with fewer innings. The bottom Right corner of the plot are relievers with a very high Strikeout per 9 innings rate. We can determine this due to the tapering off as innings increase. High performing starters tend to not record as many strikeouts as relief, as their role in a game tends to be much longer.
 
-<a href="url"> <img src="https://github.com/BrandenDahlem/Quality_Start_Prediction/blob/master/images/cluster_1.png" align="Center" height="440" width="440" ></a>
+I then clustered for groups of 10 to 15 pitchers based on the same performance metrics, but instead of using 5 clusters, I used 1000 clusters. For example, I used single-season performances of Aroldis Chapman, a prolific veteran reliever, to highlight the different cluster groups his performances fall into. 
 
+<a href="url"> <img src="https://github.com/BrandenDahlem/Quality_Start_Prediction/blob/master/images/aroldis.png" align="Center" height="440" width="700" ></a>
 
+The same was done for starting pitchers. First, I indentified clusters that included Cy Young Award-winning pitchers, the award given out at the end of the season to the player voted by sports writers as the top overall performer. I then identified the cluster with the greatest amount of these seasons. 
+
+<a href="url"> <img src="https://github.com/BrandenDahlem/Quality_Start_Prediction/blob/master/images/cy_young_cluster.png" align="Center" height="440" width="700" ></a>
+
+But the findings I found most valuable in this research involved locating pitchers that could potentially be seen as "undervalued" by most fans and/or front offices. So I found clusters with a few Cy Young award winners and identified pitchers within those clusters that had similar performances. 
+
+<a href="url"> <img src="https://github.com/BrandenDahlem/Quality_Start_Prediction/blob/master/images/small_cluster.png" align="Center" height="220" width="350" ></a>
+
+This cluster contains seasons from Clayton Kershaw and Jacob DeGrom, both former Cy Young award winners. 
+
+<a href="url"> <img src="https://github.com/BrandenDahlem/Quality_Start_Prediction/blob/master/images/big_pitchers.png" align="Center" height="220" width="350" ></a>
+
+And performances from Jose Berrios, Mike Foltynewicz, and Walker Buehler, all of whom are signed to rookie contracts at the league minimum of $570,000. It's worth noting, in this instance, that Clayton Kershaw's annual salary is $31 million, and Jacob DeGrom just signed a contract with the Mets for 5 years, $137.5 million.
+
+<a href="url"> <img src="https://github.com/BrandenDahlem/Quality_Start_Prediction/blob/master/images/small_pitchers.png" align="Center" height="220" width="350" ></a>
 
 
 
@@ -82,19 +100,7 @@ Data was collected from Baseball-reference using packages from the Selenium libr
 
   
 <a href="url"><img src="https://github.com/BrandenDahlem/Quality_Start_Prediction/blob/master/images/quality_distribution.png" align="Center" height="300" width="300" ></a>
-
-
-<br>
-<br>
-<br>
-
-The structure of my project will consist of a deeper look into what type of factors early on in a game determine the overall performance of a pitcher throughout that same game. Pitch F/x data details over 30 metrics for each pitch a pitcher throws in a season.
-
-The performance standard of a “quality start”, or less than 3 earned runs over 6 innings or more, will be my measuring stick. In order to maintain a balance throughout the examination,  I will be working to identify pitchers that have both several quality starts, as well as a number of poor starts over the course of an entire season. 
-
-This project incorporates the use of both R and Python.
-
-In Python, I will be using datasets collected from baseball-reference.com in order to determine which pitchers would be best suited for this experiment. I will be calculating their fit within this project using various machine learning techniques we have studied in this course up to this point. I believe starting with unsupervised learning methods, such as clustering, will help determine this.
-
-In R, I will use the data scraping library, baseballr, to parse through Pitch F/x data acquired by MLB Advanced Media. This will be the data I use to gather individual pitcher data once I have the pitchers identified from the work in Python. 
-
+ 
+ Worth noting is the distribution of the dataset, which appears to be almost 50/50. This is beneficial in making predictions moving forward. 
+ 
+ 
